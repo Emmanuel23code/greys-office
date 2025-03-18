@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grey's Office</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="sticky-header">
+        <div class="nav-container">
+            <h1 class="logo">Grey's Office</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="pricing.html" target="_blank" class="nav-link">Pricing</a></li>
+                </ul>
+            </nav>
+            <a href="mailto:pickedbygreyy@gmail.com" class="say-hello">Say hello - @pickedbygreyy</a>
+        </div>
+    </header>
+
+    <!-- Hero Section with Video Background -->
+    <section id="home" class="hero">
+        <video autoplay muted loop class="background-video">
+            <source src="vid/2 (3).mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h2>Welcome to Grey's Office</h2>
+            <a href="pricing.html" target="_blank" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Second Section -->
+    <section id="features" class="info-section">
+        <div class="box-container">
+            <div class="grid-box">
+                <div class="small-box">
+                    <h3><u>Business Website Templates</u></h3> <br>
+                    <p>Get stunning and Attractive website for your business <br>
+                        or brand, with specifications tailored <br> to how you services
+                        fit.
+                    </p>
+                    <a href="about.html" target="_blank" class="learn-more">Learn More</a>
+                </div>
+
+                <div class="small-box">
+                    <h3><u>Personal Website Templates</u></h3> <br>
+                    <p>Grey’s Office has in store website templates ranging <br> from 
+                       portfolio websites, blog websites and vlog websites <br> to even
+                       landing pages for your CV</p>
+                    <a href="about.html" target="_blank" class="learn-more">Learn More</a>
+                </div>
+
+                <div class="small-box">
+                    <h3><u>Simple or Minimal Website Templates</u></h3> <br>
+                    <p>Lastly, we have minimal sites or landing pages <br> just for
+                        art, entertainment or an info <br> website for less code websites.
+                    </p>
+                    <a href="about.html" target="_blank" class="learn-more">Learn More</a>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="img/1 (24).jpg" alt="Laptop" class="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Third Section -->
+    <section id="about" class="split-section">
+        <div class="fixed-image">
+            
+        </div>
+        <div class="text-box">
+            <h2>About Grey's Office</h2> <br>
+            <p>Grey's Office is a leading no-code website builder designed to help 
+                businesses establish an online presence with ease. With Our mission<br>
+                set at providing high-quality & customizable templates, allowing 
+                clients to create professional websites without coding knowledge.</p> <br> <br>
+             
+     
+             <p>A curation of passion, simplicity and efficiency, Grey's Office 
+                empowers entrepreneurs, freelancers, and small businesses to bring 
+                their ideas to life. Our platform ensures that every website is 
+                responsive, modern, and tailored to industry standards.<br> <br>
+                
+                Ranging from portfolios to e-commerce stores, we offer solutions that fit every 
+                business need. With continuous updates and new features, we make website 
+                building professional & accessible.</p>
+        </div>
+    </section>
+
+    <!--Faq-->
+    <!--<div class="feat">
+        <p>Frequently Asked Questions</p>
+        <div class="Whose">
+        <button type="button" class="collapsible">Best Useful Links  ?</button>
+        <div class="content">
+        <p>Get the best villa website template in HTML CSS and <br> 
+            Bootstrap for your business. TemplateMo provides you <br>
+            the best free CSS templates in the world. Please tell <br>
+            your friends about it..</p>
+        </div>
+        <button type="button" class="collapsible">How Does This Works  ?</button>
+        <div class="content">
+        <p>Dolor almesit amet, consectetur adipiscing elit, sed <br>
+            doesn't eiusmod tempor incididunt ut labore <br>
+            consectetur adipiscing elit, sed do eiusmod tempor <br> 
+            incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <button type="button" class="collapsible">Why This App Is The Best  ?</button>
+        <div class="content">
+            <audio src="audio/5X.mp3"controls autoplay></audio>
+        </div>
+
+            <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                content.style.display = "none";
+                } else {
+                content.style.display = "block";
+                }
+            });
+            }
+            </script>
+            </div>
+    </div>-->
+    
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <!--<h1>Grey's Office</h1>-->
+            <!--<img src="logo.png" alt="Grey's Office Logo">-->
+            
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Grey's Office. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Boxes -->
+    <div class="floating-boxes">
+        <div class="floating-box"></div>
+        <div class="floating-box"></div>
+        <div class="floating-box"></div>
+    </div>
+
+    <script src="script.js">
+        document.addEventListener("DOMContentLoaded", () => {
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach(item => {
+        const question = item.querySelector(".faq-question");
+
+        question.addEventListener("click", () => {
+            // Close other open FAQs
+            faqItems.forEach(faq => {
+                if (faq !== item) {
+                    faq.classList.remove("active");
+                }
+            });
+
+            // Toggle the selected FAQ
+            item.classList.toggle("active");
+        });
+    });
+});
+
+
+    </script>
+</body>
+</html>
+        

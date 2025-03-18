@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Grey's Office</title>
+    <!--<link rel="stylesheet" href="styles/global.css">-->
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <header>
+        <video id="BG" autoplay loop muted>
+            <source src="Vid/2 (2).mp4" type="Video/mp4">
+        </video>
+
+        <nav>
+            <div class="logo"></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#services">Services</a></li>
+            </ul>
+            <div class="hamburger">&#9776;</div>
+        </nav>
+
+        <div class="hero">
+            <h1>How We Operate</h1>
+            <button id="get-started">Learn More</button>
+        </div>
+        
+    </header>
+
+    <section id="services" class="Feat">
+        <p>SERVICES</p>
+
+        <div class="F1">
+            <div class="Feat1">
+                <h2><u>UI/UX Design</u></h2> <br> <br> 
+            <ol type="1">
+                <li>Enhanced User Experience – 
+                    Intuitive and user-friendly interfaces improve 
+                    customer satisfaction.</li> <br>
+
+                <li>Higher Engagement & Retention – 
+                    Well-designed UI keeps users engaged and 
+                    reduces bounce rates.</li> <br>
+
+                <li>Increased Conversions – 
+                    A seamless experience guides users toward taking 
+                    desired actions (sign-ups, purchases, etc.).</li> <br>
+
+                <li>Stronger Brand Identity – 
+                    A consistent and attractive design boosts brand 
+                    recognition and trust.</li> <br>
+
+                <li>Better Accessibility – 
+                    Designs are inclusive, ensuring a great experience 
+                    for all users, including those with disabilities.</li> <br>
+
+                <li>Faster & More Efficient Development – 
+                    A solid UI/UX foundation reduces back-and-forth 
+                    changes in development.</li> <br>
+
+                <li>Competitive Advantage – 
+                    A superior design sets businesses apart from competitors.</li> <br>
+            </ol>
+            </div>
+
+            <div class="Feat2">
+                <h2><u>Front-End Development</u></h2> <br> <br>
+                <ol type="1">
+                    <li>Responsive & Mobile-Friendly Websites – 
+                        Ensures an optimal experience across all devices.</li> <br>
+
+                    <li>Fast-Loading Pages – 
+                        Optimized code and best practices lead to faster 
+                        website performance.</li> <br>
+
+                    <li>SEO-Friendly Code – 
+                        Proper HTML structure improves search engine 
+                        rankings and visibility.</li> <br>
+
+                    <li>Cross-Browser Compatibility – 
+                        The site works smoothly on Chrome, Firefox, 
+                        Edge, Safari, etc.</li> <br>
+
+                    <li>Interactive & Engaging UI – 
+                        Dynamic elements make the website more engaging 
+                        for users.</li> <br>
+        
+                    <li>Scalability & Future-Proofing – 
+                        Clean, maintainable code makes future 
+                        updates easier.</li> <br>
+                </ol>
+                
+            </div>
+        </div>
+        
+    </section>
+  
+  
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project" onclick="openModal('images/project1.jpg')">
+            <img src="img/1 (28).jpg" alt="Project 1">
+            <p>E-commerce website for a leading fashion brand.</p>
+        </div>
+        <div class="project" onclick="openModal('images/project2.jpg')">
+            <a href="template3.html"><img src="img/1 (23).jpg" alt="Project 2"></a>
+            <p>Portfolio website for a professional photographer.</p>
+        </div>
+        <div class="project" onclick="openModal('images/project3.jpg')">
+            <img src="img/1 (24).jpg" alt="Project 3">
+            <p>Business website for a tech startup.</p>
+        </div>
+    </section>
+
+    
+    <section class="reviews">
+        <h2>Client Reviews</h2>
+        <div class="review-carousel">
+            <blockquote>"Grey's Office made it incredibly easy to launch my website. Highly recommended!" - Sarah K.</blockquote>
+            <blockquote>"I was able to customize my site effortlessly. The templates are top-notch!" - James L.</blockquote>
+            <blockquote>"Their customer support and design quality are exceptional. A great experience!" - Emma R.</blockquote>
+            <blockquote>"I love the simplicity and power of Grey's Office. My site looks amazing!" - David M.</blockquote>
+        </div>
+    </section>
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Grey's Office. All rights reserved.</p>
+    </footer>
+    <script src="script.js">
+        document.querySelector(".hamburger").addEventListener("click", function(){
+
+            document.querySelector(".nav-links").classList.toggle("active");
+        })
+        document.addEventListener("DOMContentLoaded", () => {
+            let reviews = document.querySelectorAll(".review-carousel blockquote");
+            let index = 0;
+            function showReview() {
+                reviews.forEach(r => r.style.display = "none");
+                reviews[index].style.display = "block";
+                index = (index + 1) % reviews.length;
+            }
+            setInterval(showReview, 3000);
+    showReview();
+});
+
+function openModal(src) {
+    document.getElementById("modal").style.display = "flex";
+    document.getElementById("modal-img").src = src;
+}
+
+function closeModal() {
+    document.getElementById("modal").style.display = "none";
+}
+
+    </script>
+</body>
+</html>

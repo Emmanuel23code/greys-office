@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contact Page Styling */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('img/1\ \(23\).jpg') no-repeat center center/cover;
+    backdrop-filter: blur(10px) brightness(0.4);
+}
+
+.contact-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: left;
+    color: white;
+}
+
+.contact-form h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+/*
+.checkbox-group {
+    border: 1px solid red;
+    width: 100%;
+    margin: 35px;
+    font-size: 15px;
+    float: left;
+}
+
+.checkbox-group label {
+    position: absolute;
+    top:15px;
+    display: flex;
+    width: 50%;
+    border: 1px solid black;
+    
+}*/
+
+.send-btn {
+    width: 100%;
+    padding: 12px;
+    background: purple;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.send-btn:hover {
+    background: white;
+    color: purple;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Grey’s Office</title>
+    <link rel="stylesheet" href="pricing.css">
+    <script defer src="pricing.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <video id="BG" autoplay loop muted>
+            <source src="Vid/2 (2).mp4" type="Video/mp4">
+        </video>
+
+        <nav>
+            <div class="logo"></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#services">Services</a></li>
+            </ul>
+            <div class="hamburger">&#9776;</div>
+        </nav>
+
+        <div class="hero">
+            <h1>How We Operate</h1>
+            <button id="get-started">Learn More</button>
+        </div>
+        
+    </header>
+
+     <!--Pricing Plans-->
+    <section class="pricing-section">
+        <div class="plan-box">
+            <h2>E-Commerce Website Templates</h2> <br>
+            <ul>
+                <li>Fully responsive online store design</li><br> 
+                <li>Secure payment gateway integration</li> <br>
+                <li>Unlimited product listings</li> <br>
+                <li>SEO-optimized product pages</li> <br>
+                <li>Inventory and order management system</li> <br>
+                <li>Free domain for the first year</li> <br>
+                <li>Mobile-friendly shopping experience</li> <br>
+            </ul>
+
+            <p>Starting @ $400</p> <br>
+
+            <div class="buttons">
+                <a href="business-template1.html" class="preview-btn">Preview 1</a>
+                <a href="business-template2.html" class="preview-btn">Preview 2</a>
+            </div>
+        </div>
+
+        <div class="plan-box">
+            <h2>Personal Website Templates</h2> <br>
+            <ul>
+                <li>Clean, modern, and mobile-friendly design</li> <br>
+                <li>Customizable templates for easy editing</li> <br>
+                <li>Built-in blog section for personal updates</li> <br>
+                <li>SEO and speed optimization</li> <br>
+                <li>Social media integration</li> <br>
+                <li>24/7 customer support</li> <br>
+            </ul>
+
+            <p>Starting @ $400</p> <br>
+
+            <div class="buttons">
+                <a href="personal-template1.html" class="preview-btn">Preview 1</a>
+                <a href="personal-template2.html" class="preview-btn">Preview 2</a>
+            </div>
+        </div>
+
+        <div class="plan-box">
+            <h2>Simple Plans</h2> <br>
+            <ul>
+                <li>Fast and easy website setup</li> <br>
+                <li>Pre-designed templates for quick launch</li> <br>
+                <li>Mobile-responsive layout</li> <br>
+                <li>Basic SEO optimization</li> <br>
+                <li>Contact form and email integration</li> <br>
+                <li>Minimal maintenance required</li> <br>
+                <li>Affordable pricing with no hidden fees</li> <br>
+            </ul>
+
+            <p>Starting @ $400</p> <br>
+
+            <div class="buttons">
+                <a href="#simple-templates" class="preview-btn">Preview</a>
+            </div>
+        </div>
+    </section>
+
+     <!--Quote Section-->
+    <section class="quote">
+        <p>"Building a website should be simple and accessible to everyone." - Grey’s Office</p>
+    </section>
+
+     <!--Footer-->
+    <footer>
+        <p>© 2025 Grey’s Office. All rights reserved.</p>
+    </footer>
+
+    <script src="pricing.js">
+        document.addEventListener("DOMContentLoaded",
+        function(){
+            const carousel =
+            document.querySelector(".carousel-text");
+            const items = carousel.innerHTML;//Duplicate content for seamless looping
+
+            carousel.innerHTML += items; //Doubles the text 4 smooth infibite effect
+        })
+    </script>
+</body>
+</html>
